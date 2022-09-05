@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .tarefas {
+    @apply mt-2;
+  }
+
+  .tarefas li {
+    @apply flex items-center justify-between w-full bg-neutral-900 p-3  pl-6 rounded-xl transition-all;
+  }
+
+  .tarefas li:hover {
+    @apply bg-neutral-800;
+  }
+
+  .tarefas li div {
+    @apply flex gap-1 mx-2;
+  }
+
+  .tarefas li div svg {
+    @apply flex items-center justify-center text-neutral-600 text-4xl text-center p-2 transition-all cursor-pointer;
+  }
+  .tarefas li div svg:last-child:hover {
+    @apply text-red-500 bg-neutral-900 rounded-lg;
+  }
+  .tarefas li div svg:first-child:hover {
+    @apply text-lime-400 bg-neutral-900 rounded-lg;
+  }
+}

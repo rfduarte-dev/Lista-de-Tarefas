@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main {
+    @apply w-full max-w-screen-xl  flex flex-col bg-neutral-900 p-8  rounded-3xl;
+  }
+
+  .title {
+    @apply flex items-center gap-2 justify-center text-neutral-100 text-2xl mb-4 text-center;
+  }
+
+  .title svg {
+    @apply text-orange-500;
+  }
+
+}
