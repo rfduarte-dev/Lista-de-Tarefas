@@ -4,7 +4,7 @@
 
 @layer components {
   .main {
-    @apply w-full max-w-screen-xl  flex flex-col bg-neutral-900 p-8  rounded-3xl;
+    @apply flex flex-col  bg-neutral-900 p-6 rounded-3xl;
   }
 
   .title {
@@ -14,5 +14,11 @@
   .title svg {
     @apply text-orange-500;
   }
+}
 
+.main {
+  width: 90%;
+  max-width: 600px;
+  position: absolute;
+  transform: translate(-50%, -30%);
 }

@@ -8,7 +8,7 @@
   }
 
   .tarefas li {
-    @apply flex items-center justify-between w-full bg-neutral-900 p-3  pl-6 rounded-xl transition-all;
+    @apply w-full flex items-center justify-between bg-neutral-900 p-3 pl-6 rounded-xl transition-all;
   }
 
   .tarefas li:hover {
@@ -16,7 +16,7 @@
   }
 
   .tarefas li div {
-    @apply flex gap-1 mx-2;
+    @apply flex gap-1;
   }
 
   .tarefas li div svg {

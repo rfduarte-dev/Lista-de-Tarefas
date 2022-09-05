@@ -12,7 +12,7 @@ export default function Tarefas({ tarefas, handleEdit, handleDelete }) {
     <ul className="tarefas">
       {tarefas.map((tarefa, index) => (
         <li key={tarefa}>
-          {tarefa}
+          <p>{tarefa}</p>
           <div>
             <FaRegEdit onClick={(e) => handleEdit(e, index)} className="edit" />
             <FaRegTrashAlt
