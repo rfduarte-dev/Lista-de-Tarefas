@@ -8,11 +8,26 @@
   }
 
   .tarefas li {
-    @apply w-full flex items-center justify-between bg-neutral-900 p-3 pl-6 rounded-xl transition-all;
+    @apply w-full flex items-center justify-between dark:bg-neutral-900 p-3 pl-6 rounded-xl transition-all;
+  }
+
+  .tarefas li p {
+    @apply flex gap-2 items-center;
+  }
+
+  .tarefas li p.done {
+    @apply text-lime-500;
+  }
+  .tarefas li p.done svg {
+    @apply text-lime-500 flex;
+  }
+
+  .tarefas li p svg {
+    @apply hidden;
   }
 
   .tarefas li:hover {
-    @apply bg-neutral-800;
+    @apply bg-neutral-100 dark:bg-neutral-800;
   }
 
   .tarefas li div {
@@ -20,12 +35,16 @@
   }
 
   .tarefas li div svg {
-    @apply flex items-center justify-center text-neutral-600 text-4xl text-center p-2 transition-all cursor-pointer;
+    @apply flex items-center justify-center text-neutral-400 dark:text-neutral-600 text-4xl text-center p-2 transition-all cursor-pointer;
   }
   .tarefas li div svg:last-child:hover {
-    @apply text-red-500 bg-neutral-900 rounded-lg;
+    @apply text-red-500 bg-white dark:bg-neutral-900 rounded-lg;
   }
   .tarefas li div svg:first-child:hover {
-    @apply text-lime-400 bg-neutral-900 rounded-lg;
+    @apply text-lime-400 dark:text-lime-600 bg-white dark:bg-neutral-900 rounded-lg;
+  }
+
+  .tarefas.done {
+    @apply decoration-lime-400;
   }
 }

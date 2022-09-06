@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --hue: 35;
 
@@ -31,9 +33,7 @@
 
 body {
   height: 100vh;
-  background-color: var(--bg-color);
   font-family: 'Poppins', sans-serif;
-  color: var(--primary-color);
   display: flex;
   position: relative;
   align-items: center;
@@ -42,4 +42,10 @@ body {
 
 button {
   cursor: pointer;
+}
+
+@layer components {
+  body {
+    @apply dark:bg-neutral-800 dark:text-neutral-400 bg-neutral-300 text-neutral-600;
+  }
 }

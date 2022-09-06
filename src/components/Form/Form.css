@@ -8,7 +8,7 @@
   }
 
   .form__container .input__field {
-    @apply w-full p-2 rounded-xl outline-none border-none text-neutral-500;
+    @apply w-full p-2 rounded-xl border-2 border-neutral-200  outline-none dark:border-none dark:text-neutral-500;
   }
 
   .form__container .btn__input {

@@ -4,11 +4,11 @@
 
 @layer components {
   .main {
-    @apply flex flex-col  bg-neutral-900 p-6 rounded-3xl;
+    @apply flex flex-col bg-white dark:bg-neutral-900 p-6 rounded-3xl;
   }
 
   .title {
-    @apply flex items-center gap-2 justify-center text-neutral-100 text-2xl mb-4 text-center;
+    @apply flex items-center gap-2 justify-center text-neutral-600 dark:text-neutral-100 text-2xl mb-4 text-center;
   }
 
   .title svg {

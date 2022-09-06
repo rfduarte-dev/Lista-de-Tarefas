@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Icons
-import { FaRegEdit, FaRegTrashAlt } from 'react-icons/fa';
+import { FaRegEdit, FaRegTrashAlt, FaCheck } from 'react-icons/fa';
 
 // Css
 import './Tarefas.css';
@@ -12,7 +12,14 @@ export default function Tarefas({ tarefas, handleEdit, handleDelete }) {
     <ul className="tarefas">
       {tarefas.map((tarefa, index) => (
         <li key={tarefa}>
-          <p>{tarefa}</p>
+          <p
+            onClick={(e) => {
+              e.target.classList.toggle('done');
+            }}
+          >
+            <FaCheck />
+            {tarefa}
+          </p>
           <div>
             <FaRegEdit onClick={(e) => handleEdit(e, index)} className="edit" />
             <FaRegTrashAlt
